@@ -3,7 +3,8 @@ import timeit
 
 def timer(func, *args, **kwargs):
     """
-    function to measure the time that function takes.
+    This Function measures the time that the passed function
+    takes to run on the passed arguments.
     :param func: function to run on passed arguments
     :param args: non keyword argument
     :param kwargs: key word arguments
