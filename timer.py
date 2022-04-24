@@ -1,13 +1,13 @@
 import timeit
 
 
-def timer(f, *args, **kwargs):
+def timer(func, *args, **kwargs):
     """
     function to measure the time that function takes.
-    :param f:
-    :param args:
-    :param kwargs:
-    :return: time
+    :param func: function to run on passed arguments
+    :param args: non keyword argument
+    :param kwargs: key word arguments
+    :return: time that function takes
     """
     start_timer = timeit.default_timer ()
     f (*args, **kwargs)
