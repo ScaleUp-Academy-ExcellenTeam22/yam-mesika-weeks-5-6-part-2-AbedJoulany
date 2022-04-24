@@ -9,10 +9,10 @@ def timer(f, *args, **kwargs):
     :param kwargs:
     :return: time
     """
-    start = timeit.default_timer ()
+    start_timer = timeit.default_timer ()
     f (*args, **kwargs)
-    stop = timeit.default_timer ()
-    return stop - start
+    stop_timer = timeit.default_timer ()
+    return stop_timer - start_timer
 
 
 if __name__ == '__main__':
